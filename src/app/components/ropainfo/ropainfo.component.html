@@ -1,0 +1,17 @@
+<p>ropainfo works!</p>
+
+<div class="card mb-3"  style="max-width: 540px;" >
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{detalles.img}}" class="card-img mt-5 p-2" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{detalles.nombre}} : </h5>
+            <p>{{detalles.creacion}}</p>
+          <p class="card-text">{{detalles.bio}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary mb-3" [routerLink]="['/ropas']">Regresar</button>

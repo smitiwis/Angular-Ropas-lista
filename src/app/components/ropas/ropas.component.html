@@ -1,0 +1,15 @@
+<h5 class="m-4">Información de ropas</h5>
+
+<div class="card-columns">
+  <div class="" *ngFor="let item of productos, let indice = index">
+    <img src="{{ item.img }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ item.nombre }}</h5>
+      <p class="card-text">
+        This is a longer card with supporting This content is a little bit
+        longer. his is a longer card with supporting This content is a little b
+      </p>
+      <button class="btn btn-outline-primary  mb-4 " (click)="informacion(indice);">Ver más</button>
+    </div>
+  </div>
+</div>
