@@ -13,7 +13,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PageErrorComponent } from './components/page-error/page-error.component';
 //servicios
 import{ RopasService } from './service/ropas.service';
-import { RopainfoComponent } from './components/ropainfo/ropainfo.component' ;
+import { RopainfoComponent } from './components/ropainfo/ropainfo.component';
+import { BuscarComponent } from './components/buscar/buscar.component' ;
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RopainfoComponent } from './components/ropainfo/ropainfo.component' ;
     BodyComponent,
     FooterComponent,
     PageErrorComponent,
-    RopainfoComponent
+    RopainfoComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,

@@ -85,4 +85,9 @@ export class RopasService {
   informacion(indice){
     return this.productos[indice]
   }
+  buscarItem(){
+    this.productos.forEach(items => {
+      return items['nombre'];
+    });
+  }
 }

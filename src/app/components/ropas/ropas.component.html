@@ -1,15 +1,19 @@
-<h5 class="m-4">Información de ropas</h5>
-
+<h3 class="mt-3 mb-3">Lista de Ropas</h3>
 <div class="card-columns">
   <div class="" *ngFor="let item of productos, let indice = index">
-    <img src="{{ item.img }}" class="card-img-top" alt="..." />
-    <div class="card-body">
-      <h5 class="card-title">{{ item.nombre }}</h5>
-      <p class="card-text">
-        This is a longer card with supporting This content is a little bit
-        longer. his is a longer card with supporting This content is a little b
-      </p>
-      <button class="btn btn-outline-primary  mb-4 " (click)="informacion(indice);">Ver más</button>
+    <div style="border:rgb(0, 115, 182) solid 1px; " class="mb-4" >
+      <div class="text-center">
+        <img src="{{ item.img }}" class="card-img-top mt-4" alt="..." />
+      </div>
+      <div class="card-body" >
+        <h5 class="card-title">{{ item.nombre }}</h5>
+        <p class="card-text">
+          This is a longer card with supporting This content is a little bit
+          longer. his is a longer card with supporting This content is a little b
+        </p>
+        <button class="btn btn-outline-primary  mb-2 " (click)="informacion(indice);">Ver más</button>
+      </div>
+      
     </div>
   </div>
 </div>

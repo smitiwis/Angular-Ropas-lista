@@ -10,16 +10,12 @@ import { Router } from '@angular/router';
 })
 export class RopainfoComponent implements OnInit {
   detalles: any = {};
-  constructor(
-    private _activeRou: ActivatedRoute,
-    private _servicio: RopasService
-  ) {
-    this._activeRou.params.subscribe(params => {
-      this.detalles = _servicio.informacion(params.id);
+  constructor(private _activeRou: ActivatedRoute, private _servicio: RopasService, private _info:Router) {
+      this._activeRou.params.subscribe(params => {
+     this.detalles = this._servicio.informacion(params.id);
     });
   }
-  regresar(ropas:string){
-    this._info.navigate(['ropas']);
-  } 
+  
+ 
   ngOnInit() {}
 }
