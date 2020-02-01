@@ -4,6 +4,10 @@ import { Injectable } from "@angular/core";
   providedIn: "root"
 })
 export class RopasService {
+
+
+
+
   productos: any[] = [
     {
       nombre: "blusa",
@@ -78,6 +82,7 @@ export class RopasService {
       fabrica: "Puma"
     }
   ];
+
   constructor() {}
   getProductos(){
     return this.productos;
@@ -85,9 +90,25 @@ export class RopasService {
   informacion(indice){
     return this.productos[indice]
   }
-  buscarItem(){
+  buscarItem(palabra){
+    let array = [];
     this.productos.forEach(items => {
-      return items['nombre'];
+      if (palabra === items.nombre) {
+        array.push(items);
+      }
+
     });
+
+  return array;
+  
+  
   }
+
+
+
+
+
+
+
 }
+

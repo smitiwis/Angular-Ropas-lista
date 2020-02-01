@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RopasService } from '../../service/ropas.service';
+
 
 @Component({
   selector: 'app-header',
@@ -8,12 +10,13 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( private _palabra:Router) { }
+  constructor( private _ruta:Router, private _servicio:RopasService) { }
 
   ngOnInit() {
   }
   buscarRopa(palabraBuscar){
-    this._palabra.navigate(['/buscar',palabraBuscar])
+    this._ruta.navigate(['buscar/', palabraBuscar]);
+    
   }
 
 }
